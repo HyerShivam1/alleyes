@@ -1,4 +1,4 @@
-import OrderData from "../../DataStore/OrderData";
+import OrderData from "../../datastore/OrderData";
 import DataLoader from "../../common/DataLoader";
 import Navbar from "../../common/Navbar";
 import { Link, useNavigate } from "react-router-dom";

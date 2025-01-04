@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import "../../styles/search.css";
-import SearchData from "../../DataStore/SearchData";
+import SearchData from "../../datastore/SearchData";
 
 function SearchHome() {
   const { productData } = SearchData();

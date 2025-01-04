@@ -3,7 +3,7 @@ import { RxCross2 } from "react-icons/rx";
 import { useDispatch } from "react-redux";
 import { WishlistDeleteItem } from "./userSlice";
 import AddToCart from "../cart-wishlist-add/AddToCart";
-import ProductDataFetching from "../../DataStore/ProductDataFetching";
+import ProductDataFetching from "../../datastore/ProductDataFetching";
 import { useNavigate } from "react-router-dom";
 
 const WishlistItem = ({ wishlist }) => {

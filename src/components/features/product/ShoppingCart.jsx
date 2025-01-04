@@ -3,7 +3,7 @@ import { useNavigate, useNavigation } from "react-router-dom";
 import DataLoader from "../../common/DataLoader";
 import HeartButton from "./HeartButton";
 import AddToWishlist from "../../features/cart-wishlist-add/AddToWishlist";
-import ShoppingData from "../../DataStore/ShoppingData";
+import ShoppingData from "../../datastore/ShoppingData";
 import { useFireBase } from "../../services/firebase";
 
 function ShoppingCart() {

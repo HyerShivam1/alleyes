@@ -1,0 +1,113 @@
+/* Slider container */
+.slider {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Slides container */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 3); /* Ensures the correct slide length */
+  justify-content: start;
+}
+
+/* Individual slide */
+.slide {
+  min-width: 33.33%; /* Display 3 slides at a time */
+  box-sizing: border-box;
+}
+
+/* Slide images */
+.slide img {
+  width: 900px;
+  height: 450px;
+  object-fit: cover;
+  padding-right: 30px;
+}
+
+/* Navigation buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 20px;
+  height: 30px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+#heart i img {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+#heart i img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+#heart.liked i img {
+  transform: scale(1.2);
+}
+
+.Toastify__toast {
+  max-width: 90%;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #713200;
+}
+
+@media (min-width: 768px) {
+  .Toastify__toast {
+    max-width: 400px;
+    position: relative;
+    left: 640px;
+  }
+}
+
+.orderConfirm{
+animation: orderConfirm 6s ease 0s 1 normal forwards;
+}
+
+
+@keyframes orderConfirm {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}

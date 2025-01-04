@@ -1,0 +1,125 @@
+.key {
+  width: 25px;
+  position: fixed;
+  bottom: 4.1rem;
+  right: 5.1rem;
+}
+
+.key-container {
+  cursor: pointer;
+  bottom: 3rem;
+  right: 2.9rem;
+  border: 2px solid rgb(29 78 216);
+  padding: 1.8rem;
+  position: fixed;
+  border-radius: 50%;
+  background: rgb(29 78 216);
+}
+
+.arrow-container {
+  position: fixed;
+  right: 4rem;
+  bottom: 9rem;
+  display: none;
+}
+
+.key-container:hover .arrow-container,
+.arrow {
+  display: block;
+}
+
+h7 {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: rgb(245, 247, 247);
+  z-index: -2;
+}
+
+.arrow {
+  padding: 2px;
+  width: 15px;
+  height: 15px;
+  rotate: 45deg;
+  position: fixed;
+  right: 4.5rem;
+  bottom: 7.9rem;
+  background-color: rgb(245, 247, 247);
+  z-index: -1;
+}
+
+#password {
+  border: 2px solid black;
+  padding: 14px;
+}
+
+.bt {
+  position: relative;
+  left: 125px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 80px;
+  border: 2px solid rgb(29 78 216);
+  background-color: rgb(29 78 216);
+  border-radius: 4px;
+}
+
+.bt:hover {
+  border: 2px solid black;
+  background-color: white;
+}
+
+.pass {
+  border-radius: 4px;
+  border-color: rgb(209 213 219) !important;
+  color: rgb(124, 125, 126);
+}
+
+/* .arrow-container{
+    animation: arrow-container 2s ease 0s 1 alternate forwards;
+}
+
+@keyframes arrow-container {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+} */

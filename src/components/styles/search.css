@@ -1,0 +1,13 @@
+.search-drop {
+  width: 85rem;
+  background-color: aquamarine;
+  position: relative;
+  left: 4rem;
+  z-index: 10;
+  bottom: 5.5rem;
+  border-radius: 8px;
+  height: full;
+  padding: 1rem;
+}
+.search-drop-menu {
+}

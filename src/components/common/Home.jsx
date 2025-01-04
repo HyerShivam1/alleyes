@@ -8,6 +8,12 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import FloatButton from "./FloatButton";
 import Loader from "./Loader";
+import watch from "../../assets/watch.webp";
+import menSport from "../../assets/men-sports.jpg";
+import womenSport from "../../assets/women-sport.webp";
+import womenTraditional from "../../assets/women-traditional.webp";
+import menShirt from "../../assets/mens-casual-shirts.jpg";
+import mensFootwear from "../../assets/mens-footwear.jpg";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -65,32 +71,33 @@ const Home = () => {
 
   const data = [
     {
-      img: `./src/assets/watch.webp`,
+      img: watch,
       desc: `Watches & Wearables`,
       disc: `40-50% OFF`,
     },
+
     {
-      img: `./src/assets/men-sports.jpg`,
+      img: menSport,
       desc: `Men's Activewear`,
       disc: `30-40% OFF`,
     },
     {
-      img: `./src/assets/women-sport.webp`,
+      img: womenSport,
       desc: `Women's Activewear`,
       disc: `20-30% OFF`,
     },
     {
-      img: `./src/assets/women-traditional.webp`,
+      img: womenTraditional,
       desc: `Women's Traditional`,
       disc: `10-20% OFF`,
     },
     {
-      img: `./src/assets/mens-casual-shirts.jpg`,
+      img: menShirt,
       desc: `Men's Casual`,
       disc: `40-50% OFF`,
     },
     {
-      img: `./src/assets/mens-footwear.jpg`,
+      img: mensFootwear,
       desc: `Men's Casual Footwear`,
       disc: `30-40% OFF`,
     },

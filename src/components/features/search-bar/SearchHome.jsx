@@ -4,6 +4,8 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import "../../styles/search.css";
 import SearchData from "../../datastore/SearchData";
+import Camera from '../../../assets/camera.png'
+import Photo from '../../../assets/photo.png'
 
 function SearchHome() {
   const { productData } = SearchData();
@@ -140,7 +142,7 @@ function SearchHome() {
           <div className="border-2 border-black flex min-w-[120px] justify-between items-center py-3 gap-6 rounded-sm cursor-pointer">
             <img
               className="max-w-4"
-              src="./src/assets/camera.png"
+              src={Camera}
               alt="camera"
             />
             <span className="pl-0 text-xs pr-2">Click a photo</span>
@@ -149,7 +151,7 @@ function SearchHome() {
         {/* Folder Image Search */}
         <button>
           <div className="border-2 border-black flex min-w-[120px] justify-between items-center py-3 gap-6 rounded-sm cursor-pointer">
-            <img className="max-w-4" src="./src/assets/photo.png" alt="photo" />
+            <img className="max-w-4" src={Photo} alt="photo" />
             <span className="pl-0 text-xs pr-2">Select a photo</span>
           </div>
         </button>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from '../../assets/logo.jpg'
 
 const Footer = () => {
   const [message, setMessage] = useState("");
@@ -16,7 +17,7 @@ const Footer = () => {
           <div className="flex flex-row pr-5 gap-5">
             <img
               className="w-12 h-10 md:block hidden object-cover"
-              src="./src/assets/logo.jpg"
+              src= {Logo}
               alt="Logo"
             />
             <h1 className="text-xl relative top-1 pr-5 pb-2">alleyes</h1>

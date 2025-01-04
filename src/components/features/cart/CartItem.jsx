@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RxCross2 } from "react-icons/rx";
 import { useDispatch } from "react-redux";
 import { deleteItem } from "./cartSlice";
+import tick from '../../../assets/tick-mark.png'
 
 const CartItem = ({ item }) => {
   const {
@@ -83,7 +84,7 @@ const CartItem = ({ item }) => {
           <div className="flex flex-row gap-5 relative right-4 sm:pt-1 pt-0">
             <img
               className="w-4 h-4"
-              src="../src/assets/tick-mark.png"
+              src={tick}
               alt="tick"
             />
             <h2 className="text-xs text-gray-400">Verified Product</h2>

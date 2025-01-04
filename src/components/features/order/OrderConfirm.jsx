@@ -3,6 +3,7 @@ import Navbar from "../../common/Navbar";
 import "../../styles/design.css";
 import { useFireBase } from "../../services/firebase";
 import { useEffect } from "react";
+import Check from '../../../assets/check.png'
 
 
 const OrderConfirm = () => {
@@ -14,7 +15,6 @@ const OrderConfirm = () => {
       navigate("/");
     }
   }, [firebase.isLoggedIn, navigate]);
-
 
 
   return (
@@ -38,7 +38,7 @@ const OrderConfirm = () => {
           </div>
           <div className="pr-10">
             <img
-              src="../src/assets/check.png"
+              src={Check}
               alt="Order Success"
               className="lg:mt-6 mt-0 lg:w-40 w-32 object-contain orderConfirm"
             />
@@ -54,7 +54,7 @@ const OrderConfirm = () => {
         <div className="flex justify-center items-center h-screen bg-slate-300">
           <div className="flex flex-col">
         <img
-              src="../src/assets/check.png"
+              src={Check}
               alt="Order Success"
               className=" w-[40px] relative left-[75px] object-contain orderConfirm"
               />

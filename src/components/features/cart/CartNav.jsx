@@ -1,5 +1,9 @@
 import { FaRegHeart, FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from '../../../assets/alleyes.jpg'
+import Shield from '../../../assets/shield.png'
+
+
 const CartNav = () => {
   return (
     <div>
@@ -9,7 +13,7 @@ const CartNav = () => {
           <div className="flex flex-row cursor-pointer pl-14">
             <img
               className="w-[30px] h-[28px] relative top-4 pl-0"
-              src="../src/assets/alleyes.jpg"
+              src={logo}
               alt="Logo"
             />
             <Link to="/">
@@ -19,7 +23,7 @@ const CartNav = () => {
           <div className="flex flex-row items-center relative right-[80px] gap-2">
             <img
               className="w-[35px] h-[50px] pt-4 relative left-0"
-              src="../src/assets/shield.png"
+              src= {Shield}
               alt="Shield"
             />
             <h2 className="relative top-3 text-sm">100% SECURE</h2>

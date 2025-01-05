@@ -152,14 +152,13 @@ const Navbar = () => {
                   <ul>
                     <DropdownItem link={""} text={`Welcome, ${user?.displayName || "User"}`} />
                     <DropdownItem link={"/Order"} text="Orders" />
-                    <DropdownItem link={""} text="Edit Profile" />
                     <DropdownItem link={""} text="Help" />
                     <DropdownItem onClick={handleSignOut} text="Logout" />
                   </ul>
                 ) : (
                   <ul>
                     <DropdownItem link={"/login"} text={"Login/Signup"} />
-                    <DropdownItem link={"/order"} text={"Orders"} />
+                  
                   </ul>
                 )}
               </ul>
@@ -184,10 +183,9 @@ const Navbar = () => {
               {isLoggedIn ? (
                 <ul>
                   <DropdownItem link={""} text={`Welcome, ${user?.displayName || "User"}`} />
-                  <DropdownItem link={""} text={"Edit Profile"} />
-                  <DropdownItem link={"/"} text={"Orders"} />
-                  <DropdownItem link={"/men"} text={"Men"} />
-                  <DropdownItem link={"/women"} text={"Women"} />
+                  <DropdownItem link={"/order"} text={"Orders"} />
+                  <DropdownItem link={"/ShoppingCart/male"} text={"Men"} />
+                  <DropdownItem link={"/ShoppingCart/female"} text={"Women"} />
                   <DropdownItem link={"/"} onClick={handleSignOut} text={"Logout"} />
                 </ul>
               ) : (

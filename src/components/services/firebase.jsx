@@ -117,18 +117,18 @@ export const FirebaseProvider = (props) => {
         password
       );
       const user = userCredential.user;
-      await setDoc(doc(Firebase, "users", user.uid), {
-        email: email,
-        uid: user.uid,
-        displayName: displayName,
-        password: password,
-        createdAt: new Date().toISOString(),
-      });
+        await setDoc(doc(Firebase, "users", user.uid), {
+          email: email,
+          uid: user.uid,
+          displayName: displayName,
+          password: password,
+          createdAt: new Date().toISOString(),
+        });
 
-      console.log("User signed up and data saved successfully!");
-    } catch (error) {
-      console.error("Error signing up user: ", error);
-    }
+        console.log("User signed up and data saved successfully!");
+      } catch (error) {
+        console.error("Error signing up user: ", error);
+      }
   };
 
   // Fetching the data of signin user

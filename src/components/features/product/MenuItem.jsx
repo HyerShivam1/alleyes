@@ -21,7 +21,6 @@ import { AiOutlineArrowsAlt } from "react-icons/ai";
 import { useFireBase } from "../../services/firebase";
 // import { SlArrowRight } from "react-icons/sl";
 
-
 function MenuItem() {
   const { id } = useParams();
   const {
@@ -242,7 +241,10 @@ function MenuItem() {
                   /> */}
                   <FaRegHeart className="relative top-[2px]" /> FAVORITE
                 </button>
-                <button className="sm:hidden block py-5 px-6 bg-blue-600 rounded hover:shadow-md active:bg-white active:shadow-none">
+                <button
+                  className="sm:hidden block py-5 px-6 bg-blue-600 rounded hover:shadow-md active:bg-white active:shadow-none"
+                  onClick={() => handleAddToWishlist(productData)}
+                >
                   <FaRegHeart />
                 </button>
               </div>
